@@ -1,0 +1,30 @@
+EDUVERIFY INDIA — FULL UPDATED PROJECT
+
+This ZIP contains the FULL project in the correct GitHub repository-root layout.
+It includes the existing student registration/login, officer login/review, and document upload UI/backend.
+
+GITHUB UPLOAD STEPS (IMPORTANT)
+1. Download and extract this ZIP.
+2. Open your EXISTING GitHub repository.
+3. If your repository currently has the project files at the ROOT (pom.xml, Dockerfile, src folder), upload/replace the files from this extracted folder at that same root.
+4. Do NOT upload this ZIP file as a single file.
+5. Do NOT create an extra EduVerifyIndia folder inside the repository.
+6. Keep the folder layout exactly like this at repository root:
+   Dockerfile
+   pom.xml
+   src/main/java/in/eduverify/ApiController.java
+   src/main/java/in/eduverify/EduVerifyApplication.java
+   src/main/java/in/eduverify/Student.java
+   src/main/java/in/eduverify/StudentRepository.java
+   src/main/resources/application.properties
+   src/main/resources/static/index.html
+7. Existing files with the same paths must be replaced by the files from this ZIP. Keep any unrelated repository settings/files such as GitHub repository settings; do not delete the repository itself.
+8. Commit changes. If GitHub's browser uploader does not conveniently replace many files/folders, use GitHub Desktop or upload the extracted contents in the root. Check the paths before committing.
+9. In Render, let auto-deploy run or choose Manual Deploy -> Deploy latest commit.
+10. Wait for Render to say Live, then test registration, student login, officer login, file upload and review.
+
+DEMO OFFICER LOGIN (for prototype only)
+Email: officer@eduverify.demo
+Password: OfficerDemo2026!
+
+For a public demo, set OFFICER_EMAIL and OFFICER_PASSWORD in Render Environment settings before presenting. Do not use real student data or sensitive documents. This prototype is not connected to official APAAR/government systems. H2 is in-memory, so database records may reset on restart/redeploy; uploaded files are stored in temporary local storage and may disappear after restart/redeploy. This ZIP has not been confirmed by a live Render deployment; run and test after deploy.
